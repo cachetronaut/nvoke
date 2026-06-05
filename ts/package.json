@@ -1,0 +1,78 @@
+{
+  "name": "nvoke",
+  "version": "0.0.0",
+  "description": "Connector descriptors, scope-aware resolution, and local providers for agent action surfaces.",
+  "keywords": [
+    "nvoke",
+    "connectors",
+    "registry",
+    "agent-fabric",
+    "missionctrl",
+    "mcp",
+    "typescript",
+    "esm"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cachetronaut/nvoke.git"
+  },
+  "homepage": "https://github.com/cachetronaut/nvoke#readme",
+  "bugs": {
+    "url": "https://github.com/cachetronaut/nvoke/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./registry-local": {
+      "types": "./dist/registry-local.d.ts",
+      "import": "./dist/registry-local.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "build": "tsup",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm verify && pnpm build",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "verify": "pnpm check && pnpm typecheck && pnpm test"
+  },
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": [
+        "current",
+        "darwin"
+      ],
+      "cpu": [
+        "current",
+        "arm64"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

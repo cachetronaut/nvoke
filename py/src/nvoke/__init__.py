@@ -1,0 +1,31 @@
+from .core import (
+    AmbiguousConnectorError,
+    Connector,
+    ConnectorDescriptor,
+    ExecuteContext,
+    InMemoryConnectorRegistry,
+    Scope,
+    SpendRequest,
+    canonicalize,
+    covers,
+    create_registry,
+    echo_connector,
+    in_process_connector,
+    validate_descriptor,
+)
+
+__all__ = [
+    "AmbiguousConnectorError",
+    "Connector",
+    "ConnectorDescriptor",
+    "ExecuteContext",
+    "InMemoryConnectorRegistry",
+    "Scope",
+    "SpendRequest",
+    "canonicalize",
+    "covers",
+    "create_registry",
+    "echo_connector",
+    "in_process_connector",
+    "validate_descriptor",
+]

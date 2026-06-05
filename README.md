@@ -1,5 +1,10 @@
 # Nvoke
 
+<p align="center">
+  <img src="docs/assets/logo.png" alt="Nvoke logo" width="240">
+</p>
+
+
 Connector descriptors, scope-aware resolution, and local providers for agent action surfaces.
 
 Nvoke is a primitive with TypeScript and Python implementations maintained in one public repository. The shared repo keeps the public contract, fixtures, issues, and release history aligned across languages.

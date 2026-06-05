@@ -2,9 +2,15 @@
 name = "nvoke"
 version = "0.0.0"
 description = "Connector descriptors, scope-aware resolution, and local providers for agent action surfaces."
+readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/cachetronaut/nvoke"
+Repository = "https://github.com/cachetronaut/nvoke"
+Issues = "https://github.com/cachetronaut/nvoke/issues"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,5 +1,5 @@
 {
-  "name": "nvoke",
+  "name": "@cachetronaut/nvoke",
   "version": "0.0.0",
   "description": "Connector descriptors, scope-aware resolution, and local providers for agent action surfaces.",
   "keywords": [

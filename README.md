@@ -1,3 +1,15 @@
+---
+status: active
+updated: 2026-06-11
+description: Public repository overview for Nvoke.
+keywords:
+  - nvoke
+  - connectors
+  - registry
+  - typescript
+  - python
+---
+
 # Nvoke
 
 <p align="center">
@@ -11,7 +23,7 @@ Nvoke is a primitive with TypeScript and Python implementations maintained in on
 
 ## Packages
 
-- npm: `nvoke`
+- npm: `@cachetronaut/nvoke`
 - PyPI: `nvoke`
 
 ## Repository Layout

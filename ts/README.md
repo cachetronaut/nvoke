@@ -1,3 +1,14 @@
+---
+status: active
+updated: 2026-06-11
+description: TypeScript package notes for Nvoke.
+keywords:
+  - nvoke
+  - typescript
+  - connectors
+  - registry
+---
+
 # nvoke
 
 TypeScript implementation of Nvoke.
@@ -7,7 +18,7 @@ For product-level context, shared contracts, and cross-language repository infor
 ## Install
 
 ```sh
-npm install nvoke
+npm install @cachetronaut/nvoke
 ```
 
 ## Development
